@@ -1,0 +1,92 @@
+% Preamble
+% ---
+\documentclass[a4paper]{article}
+
+% Packages
+% ---
+\usepackage{amsmath} % Advanced math typesetting
+\usepackage[utf8]{inputenc} % Unicode support (Umlauts etc.)
+\usepackage[ngerman]{babel} % Change hyphenation rules
+
+\usepackage{amssymb}
+\usepackage{hyperref} % Add a link to your document
+\usepackage{graphicx} % Add pictures to your document
+\usepackage{tabularx}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{listings} % Source code formatting and highlighting
+\usepackage[inline]{enumitem}
+\usepackage{fullpage} %weiniger abstand zu den seiten
+%Code
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{textcomp}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+	backgroundcolor=\color{lbcolor},
+	tabsize=4,
+	rulecolor=,
+	basicstyle=\scriptsize,
+	upquote=true,
+	aboveskip={1.5\baselineskip},
+	columns=fixed,
+	showstringspaces=false,
+	extendedchars=true,
+	breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	frame=single,
+	showtabs=false,
+	showspaces=false,
+	showstringspaces=false,
+	identifierstyle=\ttfamily,
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+
+\begin{document}
+
+\author{Anleitung und Sicherheitsinformationen} % The authors name
+\title{GERÄTENAME}
+\date{\today{}} % Sets date you can remove \today{} and type a date manually
+\maketitle{} % Generates title
+\section{Nutzungsberechtigung}
+WIE DARF DAS GERÄT GENUTZT WERDEN? BSP.:
+Dieses Gerät darf nur mit einer gültigen Einweisung und Sicherheitsbelehrung genutzt werden. Bei Fragen oder Problemen wendet euch an einen Betreuer.
+\section{Gefahrenhinweise}
+\begin{center}
+	\begin{tabular}{C{5cm}C{5cm}C{5cm}}
+		\includegraphics[width=2.5cm]{hot-surface.png} & \includegraphics[width=2.5cm]{hand-injury.png} & \includegraphics[width=2.5cm]{toxic.png}\\
+		\textbf{Achtung heiße Oberfläche!} & \textbf{Achtung Quetschgefahr!} & \textbf{Achtung Giftig!}
+	\end{tabular}
+\end{center}
+WOHER KOMMT DIE GEFAHR? WAS IST HEIß? WAS IST GIFITG? WAS IST ZU BEACHTEN? \\
+WAS MACHT MAN WENN ETWAS SCHIEF GEHT?!
+
+\section{Technische Daten}
+ \begin{tabular}{|l|l|}
+ 	\hline
+ 	Hersteller & BCN3D\\
+ 	\hline
+	Leistung & 240W \\
+	SONSTIGE INFOS & HIER\\
+	\hline
+\end{tabular}
+\newpage
+\section{Bedienung}
+\subsection{Allgemeines}
+ALLGEMEINE INFORMATIONEN
+WAS DARF OHNE BETREUER GEMACHT WERDEN? WAS NUR MIT
+\subsection{*-VORBEREITUNG}
+\begin{itemize}
+	\item ALLE VORBEREITUNGSSCHRITTE
+\end{itemize}
+\subsection{WÄHREND DES *}
+\begin{itemize}
+	\item WAS IST WÄHRENDDESSEN ZU BEACHTEN
+\end{itemize}
+\subsection{NACH DEM *}
+\begin{itemize}
+	\item WIE RÄUMT MAN AUF?
+\end{itemize}
+\end{document}
