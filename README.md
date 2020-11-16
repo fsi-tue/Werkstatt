@@ -1,6 +1,6 @@
 # Werkstatt
 Hier sind nützliche und wichtige Dokumente für die Studierenden Werkstatt der Uni Tübingen zu finden.
-Diese Werkstatt wird durch die Fachschaft Informatik betrieben, steht jedoch jedem zur Verfügung.
+Diese Werkstatt wird durch die Fachschaft Informatik betrieben, steht jedoch jedem nach einer Einweisung zur Verfügung.
 
 # Corona
 Aufgrund der aktuellen Beschränkungen ist die Werkstatt geschlossen.
