@@ -1,0 +1,95 @@
+
+% ---
+\documentclass[a4paper]{article}
+
+% Packages
+% ---
+\usepackage{amsmath} % Advanced Math Typesetting
+\usepackage[utf8]{inputenc} % Unicode support (Umlaute etc.)
+\usepackage[ngerman]{babel} % Change hyphenation rules
+
+\usepackage{amssymb}
+\usepackage{hyperref} % Links
+\usepackage{graphicx} % Vilder
+\usepackage{listings} % Source code highlighting
+\usepackage[inline]{enumitem}
+\usepackage{fullpage} % weniger abstand zu den seiten
+\usepackage{tabularx} % bessere Tabellen
+\usepackage{pdfpages} % pdf einbinden mit \includepdf[pages={2}]{x.pdf}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+% mit C{2cm} eine Zentrierte 2cm berite spalte machen
+
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+ 
+%Code
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{textcomp}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.95,0.95,0.95}
+\lstset{
+	backgroundcolor=\color{lbcolor},
+	tabsize=4,
+	rulecolor=,
+	basicstyle=\fontsize{10}{10}, % Fontgröße erstes: Text, zweites: Zahlen
+	upquote=true,
+	aboveskip={1.5\baselineskip},
+	columns=fixed,
+	showstringspaces=false,
+	extendedchars=true,
+	breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	frame=single,
+	showtabs=false,
+	showspaces=false,
+	showstringspaces=false,
+	identifierstyle=\ttfamily,
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+\begin{document}
+
+\title{\vspace{-3cm}Zugangsbescheid\footnote{Dies ist eine temporäre Lösung bis das digitale Buchungssystem verfügbar ist.} \\
+	Werkstatt C103}
+\date{\vspace{-1cm}\today{}} % Sets date you can remove \today{} and type a date manually
+\maketitle{} % Generates title
+\section*{Einweisung}
+Hiermit bestätige ich, \underline{\hspace{3cm}}, im Auftrag des Fachbereichs Informatik, dass \underline{\hspace{3cm}}, Matrikelnummer: \underline{\hspace{2cm}}, eine Einweisung in die Werkstatt erhalten hat.\\\\
+\noindent
+Diese Einweisung umfasst folgende Bereiche:
+\begin{todolist}
+	\item Allgemeine Benutzungs- und Sicherheitshinweise
+	\item Lötstation
+	\item Oszilloskop
+	\item 3D-Drucker
+	\item Standbohrmaschine 
+	\item Proxxon
+\end{todolist}
+
+\section*{Schlüssel}
+Ein Schlüssel für folgende Zeiträume übergeben: 
+\begin{enumerate}
+	\item \underline{\hspace{3cm}}
+	\item \underline{\hspace{3cm}}
+	\item \underline{\hspace{3cm}}
+	\item \underline{\hspace{3cm}}
+	\item \underline{\hspace{3cm}}
+	\item \underline{\hspace{3cm}}
+\end{enumerate}
+\noindent
+\section*{Benutzung und Haftung}
+Geräte dürfen nur nach gültiger Einweisung benutzt / betrieben werden.\\
+Das Betreten und die Benutzung der Werkstatt erfolgt auf eigene Gefahr. Alle Schäden werden vom Verursachenden getragen.\\
+Im Falle eines Verlustes des Schlüssels ist eine Gebühr von 50€ fällig.
+\vspace{1cm}\\
+\noindent
+\underline{\hspace{3cm}}\hspace{1cm} \underline{\hspace{3cm}}\\\\\\
+\noindent
+\underline{\hspace{3cm}}\hspace{1cm} \underline{\hspace{3cm}}\\\\\\
+
+\end{document}
